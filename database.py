@@ -9,7 +9,7 @@ DATABASE_URL =os.getenv("DATABASE_URL")
 
 engine = create_engine(DATABASE_URL)
 
-base =declarative_base()
+Base =declarative_base()
 
 sesion = sessionmaker(bind=engine)
 
